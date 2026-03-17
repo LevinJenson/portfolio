@@ -1,12 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Levin Jenson J — Senior Software Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple HTML document.</p>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav>
+    <div class="container nav-inner">
+      <div class="nav-logo">&lt;<span>Levin</span> /&gt;</div>
+
+      <!-- Desktop links -->
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Hamburger button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="container">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Open to new opportunities
+      </div>
+      <h1 class="hero-name">
+        Hi, I'm<br /><span class="highlight">Levin Jenson J</span>
+      </h1>
+      <p class="hero-title">&gt;&nbsp;Senior Software Developer &nbsp;·&nbsp; Endava</p>
+      <p class="hero-desc">
+        3.5+ years building cloud-native, event-driven systems on AWS for high-throughput
+        financial trading platforms. Specialising in Java microservices, Spring Boot, TypeScript,
+        and distributed architecture.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i>View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i>Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a class="social-link" href="https://www.linkedin.com/in/levin-jenson-j-24a7171aa/" target="_blank" rel="noopener" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="social-link" href="https://github.com/LevinJenson" target="_blank" rel="noopener" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ────────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-label">// 01. about me</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+
+        <div class="about-text fade-up">
+          <p>Senior Software Developer with <strong>3.5 years</strong> of experience, including
+          <strong>1 year in a senior capacity</strong>, specialising in cloud-native, event-driven
+          systems on AWS within the financial trading domain.</p>
+          <p>Currently driving the greenfield development of a <strong>high-throughput trading
+          platform</strong> at IG, leveraging Java, Spring Boot, and TypeScript across a distributed
+          microservices architecture.</p>
+          <p>Deep expertise across AWS — Lambda, ECS, API Gateway, DynamoDB, RDS, S3, SQS, and
+          OpenSearch — with strong practices in IaC using Terraform and CloudFormation, and
+          observability via CloudWatch and Splunk.</p>
+          <p>Currently exploring the AI/LLM space — building agents, working with AWS Bedrock,
+          MCP (Model Context Protocol), and integrating tools like Claude, Claude Code, and
+          GitHub Copilot into engineering workflows.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">3.5+</div>
+              <div class="stat-label">Years Exp.</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">1</div>
+              <div class="stat-label">Company</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">8.61</div>
+              <div class="stat-label">CGPA Gold</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-highlights fade-up">
+          <div class="highlight-card">
+            <h4>☁️ Cloud-Native Architecture</h4>
+            <p>Scalable services on AWS using Lambda, ECS, SQS, and API Gateway for high-throughput financial systems.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>⚡ Event-Driven Systems</h4>
+            <p>Kafka-powered microservices with low-latency trade execution pipelines and real-time market data processing.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>🏗️ Infrastructure as Code</h4>
+            <p>Automated AWS provisioning with Terraform and CloudFormation; full CI/CD via GitLab CI.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>🔒 Security &amp; Observability</h4>
+            <p>Integrated Snyk, Wiz, SonarQube for code quality; CloudWatch and Splunk for end-to-end observability.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>🤖 AI &amp; LLM Exploration</h4>
+            <p>Building AI agents with AWS Bedrock and MCP; hands-on with Claude, Claude Code, Claude Desktop, ChatGPT, and GitHub Copilot.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ───────────────────────────────────────── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-label">// 02. experience</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+
+        <!-- Senior Role -->
+        <div class="timeline-item fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">
+                Endava
+                <span style="color:var(--muted);font-weight:400;font-size:0.88rem">— Client: IG</span>
+              </div>
+              <div class="exp-role">Senior Developer</div>
+              <div class="exp-location">
+                <i class="fa-solid fa-location-dot" style="font-size:0.72rem;margin-right:4px"></i>
+                Bangalore, India
+              </div>
+            </div>
+            <span class="exp-period">May 2025 – Present</span>
+          </div>
+
+          <div class="exp-group-title">Order Management Service</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">Designed and developed a scalable Order Management Service on AWS handling end-to-end trade order lifecycle — creation, validation, routing, and execution.</div>
+          </div>
+
+          <div class="exp-group-title">Trading Gateways</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">Built high-performance Trading Gateways connecting internal order flow with external market venues, enabling low-latency trade execution using Java, Spring Boot, and AWS ECS.</div>
+          </div>
+
+          <div class="exp-group-title">AWS Step Functions &amp; Independent Scaling</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">Orchestrated complex trade workflows using AWS Step Functions with reliable state management and retry logic across distributed services.</div>
+            <div class="exp-bullet">Architected services for independent scaling using AWS Lambda, ECS, and SQS, ensuring peak-load handling without cross-service impact.</div>
+          </div>
+        </div>
+
+        <!-- Developer Role -->
+        <div class="timeline-item fade-up">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Endava</div>
+              <div class="exp-role">Developer</div>
+              <div class="exp-location">
+                <i class="fa-solid fa-location-dot" style="font-size:0.72rem;margin-right:4px"></i>
+                Bangalore, India
+              </div>
+            </div>
+            <span class="exp-period">Jul 2022 – Mar 2025</span>
+          </div>
+
+          <div class="exp-group-title">GxCapture — BPMN Workflow Engine</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">Developed full-stack features for GxCapture using Java and Spring Boot, building a BPMN-based workflow engine to model, execute, and manage complex business process flows.</div>
+            <div class="exp-bullet">Designed backend APIs to drive workflow state transitions and integrated with the front-end for a visual, interactive process management experience.</div>
+          </div>
+
+          <div class="exp-group-title">GxQuality — Certification &amp; Validation</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">Built full-stack components for GxQuality, a certification platform validating requests/responses between legacy and modern systems during migrations.</div>
+            <div class="exp-bullet">Developed validation rules and comparison logic to identify discrepancies, enabling reliable regression testing and sign-off processes.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ───────────────────────────────────────────── -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="section-label">// 03. tech stack</p>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category fade-up">
+          <h3>Languages</h3>
+          <div class="skill-icons">
+            <div class="skill-chip"><i class="devicon-java-plain i-java"></i>Java</div>
+            <div class="skill-chip"><i class="devicon-typescript-plain i-ts"></i>TypeScript</div>
+            <div class="skill-chip"><i class="devicon-javascript-plain i-js"></i>JavaScript</div>
+            <div class="skill-chip"><i class="devicon-html5-plain i-html5"></i>HTML5</div>
+            <div class="skill-chip"><i class="devicon-css3-plain i-css3"></i>CSS3</div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="skill-icons">
+            <div class="skill-chip"><i class="devicon-spring-plain i-spring"></i>Spring Boot</div>
+            <div class="skill-chip"><i class="devicon-react-original i-react"></i>ReactJS</div>
+            <div class="skill-chip"><i class="devicon-nodejs-plain i-node"></i>Node.js</div>
+            <div class="skill-chip"><i class="devicon-graphql-plain i-graphql"></i>GraphQL</div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3>AWS Cloud Services</h3>
+          <div class="skill-icons">
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>Lambda</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>ECS</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>API Gateway</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>DynamoDB</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>RDS</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>S3</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>SQS</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>OpenSearch</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>CloudFormation</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>Step Functions</div>
+            <div class="skill-chip badge-aws"><i class="devicon-amazonwebservices-plain"></i>CloudWatch</div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3>Containers &amp; Orchestration</h3>
+          <div class="skill-icons">
+            <div class="skill-chip"><i class="devicon-docker-plain i-docker"></i>Docker</div>
+            <div class="skill-chip"><i class="devicon-kubernetes-plain i-k8s"></i>Kubernetes</div>
+            <div class="skill-chip badge-purple"><i class="fa-solid fa-network-wired"></i>HashiCorp Nomad</div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3>Messaging, Caching &amp; Databases</h3>
+          <div class="skill-icons">
+            <div class="skill-chip badge-orange"><i class="fa-solid fa-bolt"></i>Kafka</div>
+            <div class="skill-chip"><i class="devicon-redis-plain i-redis"></i>Redis</div>
+            <div class="skill-chip"><i class="devicon-mongodb-plain i-mongo"></i>MongoDB</div>
+            <div class="skill-chip"><i class="devicon-microsoftsqlserver-plain i-mssql"></i>MSSQL</div>
+            <div class="skill-chip"><i class="devicon-postgresql-plain i-pg"></i>PostgreSQL / RDS</div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3>DevOps, IaC &amp; Monitoring</h3>
+          <div class="skill-icons">
+            <div class="skill-chip"><i class="devicon-terraform-plain i-tf"></i>Terraform</div>
+            <div class="skill-chip"><i class="devicon-gitlab-plain i-gitlab"></i>GitLab CI</div>
+            <div class="skill-chip"><i class="devicon-jenkins-plain i-jenkins"></i>Jenkins</div>
+            <div class="skill-chip"><i class="devicon-git-plain i-git"></i>Git</div>
+            <div class="skill-chip badge-cyan"><i class="fa-solid fa-magnifying-glass-chart"></i>Splunk</div>
+            <div class="skill-chip badge-red"><i class="fa-solid fa-shield-halved"></i>Snyk / Wiz</div>
+            <div class="skill-chip badge-green"><i class="fa-solid fa-bug-slash"></i>SonarQube</div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3>AI &amp; LLM</h3>
+          <div class="skill-icons">
+            <div class="skill-chip badge-purple"><i class="fa-solid fa-brain"></i>AWS Bedrock</div>
+            <div class="skill-chip badge-purple"><i class="fa-solid fa-robot"></i>AI Agents</div>
+            <div class="skill-chip badge-purple"><i class="fa-solid fa-plug"></i>MCP</div>
+            <div class="skill-chip badge-cyan"><i class="fa-solid fa-comment-dots"></i>Claude / Claude Code</div>
+            <div class="skill-chip badge-cyan"><i class="fa-solid fa-desktop"></i>Claude Desktop</div>
+            <div class="skill-chip badge-green"><i class="fa-solid fa-wand-magic-sparkles"></i>ChatGPT</div>
+            <div class="skill-chip badge-green"><i class="fa-solid fa-code-branch"></i>GitHub Copilot</div>
+            <div class="skill-chip badge-yellow"><i class="fa-solid fa-microscope"></i>LLM Exploration</div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3>Tools &amp; Practices</h3>
+          <div class="skill-icons">
+            <div class="skill-chip"><i class="devicon-jira-plain i-jira"></i>JIRA</div>
+            <div class="skill-chip"><i class="devicon-postman-plain i-postman"></i>Postman</div>
+            <div class="skill-chip"><i class="devicon-maven-plain i-maven"></i>Maven</div>
+            <div class="skill-chip badge-yellow"><i class="fa-solid fa-diagram-project"></i>Microservices</div>
+            <div class="skill-chip badge-cyan"><i class="fa-solid fa-arrows-spin"></i>Agile / Scrum</div>
+            <div class="skill-chip badge-green"><i class="fa-solid fa-sitemap"></i>System Design</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ─────────────────────────────────────────── -->
+  <section id="projects" class="section" style="background:var(--bg2)">
+    <div class="container">
+      <p class="section-label">// 04. projects</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up">
+          <div class="project-icon"><i class="fa-solid fa-chart-candlestick"></i></div>
+          <div class="project-title">Cloud-Native Trading Platform</div>
+          <div class="project-client">IG Markets — Greenfield Build</div>
+          <p class="project-desc">Architecting and building a cloud-native trading platform from scratch on AWS, supporting real-time trade execution, market data processing, and client-facing APIs.</p>
+          <div class="project-bullets">
+            <div class="project-bullet">Event-driven microservices using AWS Lambda, ECS, SQS, Kafka, and API Gateway for high-throughput financial transactions with low latency.</div>
+            <div class="project-bullet">Java microservices with Spring Boot, containerised with Docker, deployed on AWS ECS.</div>
+            <div class="project-bullet">Redis caching layer to optimise performance for frequently accessed trading data.</div>
+            <div class="project-bullet">Financial data pipelines using DynamoDB, RDS, S3, and OpenSearch.</div>
+            <div class="project-bullet">Infrastructure as Code with Terraform &amp; CloudFormation; full GitLab CI pipeline automation.</div>
+            <div class="project-bullet">End-to-end observability with CloudWatch and Splunk.</div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Spring Boot</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">AWS</span>
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">Kafka</span>
+            <span class="project-tag">Redis</span>
+            <span class="project-tag">Terraform</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-icon" style="background:rgba(6,182,212,0.12);color:var(--accent2)">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <div class="project-title">On-Premises to Nomad Migration</div>
+          <div class="project-client">IG — Infrastructure Migration</div>
+          <p class="project-desc">Migrated legacy on-premises applications to HashiCorp Nomad, improving deployment flexibility, resource utilisation, and operational scalability.</p>
+          <div class="project-bullets">
+            <div class="project-bullet">Containerised existing workloads using Docker and defined Nomad job specifications for consistent, repeatable deployments.</div>
+            <div class="project-bullet">Reduced infrastructure overhead by shifting from manual server management to orchestrated container scheduling.</div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">HashiCorp Nomad</span>
+            <span class="project-tag">Java</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ────────────────────────────────────────── -->
+  <section id="education" class="section">
+    <div class="container">
+      <p class="section-label">// 05. education</p>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card fade-up">
+        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <div class="edu-degree">Bachelor of Technology — Electronics &amp; Communication Engineering</div>
+          <div class="edu-school">Bethlahem Institute of Technology, Karungal</div>
+          <div class="edu-meta">2018 – 2022</div>
+          <div class="cgpa-badge">
+            <i class="fa-solid fa-medal"></i>&nbsp; CGPA: 8.61 — Institute Gold Medalist
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ──────────────────────────────────────── -->
+  <section class="section" style="background:var(--bg2)">
+    <div class="container">
+      <p class="section-label">// 06. achievements</p>
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card fade-up">
+          <div class="ach-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div class="ach-title">Class Topper — Bethlahem Institute of Technology</div>
+            <div class="ach-desc">Graduated as the class topper with a CGPA of 8.61, consistently ranking first throughout the BTech program in Electronics and Communication Engineering.</div>
+          </div>
+        </div>
+        <div class="achievement-card fade-up">
+          <div class="ach-icon"><i class="fa-solid fa-award"></i></div>
+          <div>
+            <div class="ach-title">Best Employee Award — 2024</div>
+            <div class="ach-desc">Recognised as the Best Employee at Endava in 2024 for delivering high-impact features and demonstrating exceptional engineering quality.</div>
+          </div>
+        </div>
+        <div class="achievement-card fade-up">
+          <div class="ach-icon"><i class="fa-solid fa-star"></i></div>
+          <div>
+            <div class="ach-title">Best Employee Award — 2025</div>
+            <div class="ach-desc">Awarded Best Employee at Endava for the second consecutive year in 2025, acknowledging leadership in the greenfield cloud-native trading platform build and consistent excellence across deliverables.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section-label" style="text-align:center">// 07. contact</p>
+      <h2 class="section-title" style="text-align:center">Get In Touch</h2>
+      <p class="contact-desc">Open to senior/lead engineering roles, fintech opportunities, and interesting distributed-systems challenges.</p>
+      <div class="contact-links">
+        <a class="contact-btn" href="https://www.linkedin.com/in/levin-jenson-j-24a7171aa/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in" style="color:#0a66c2"></i>LinkedIn
+        </a>
+        <a class="contact-btn" href="https://github.com/LevinJenson" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <p>Designed &amp; Built by <span>Levin Jenson J</span> &nbsp;·&nbsp; 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
